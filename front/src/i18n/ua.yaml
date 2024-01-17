@@ -1,0 +1,469 @@
+page:
+  transport:
+    car:
+      deleteModalText: Ви дійсно хочете видалити автомобіль із номерним знаком «<span>{title}</span>»?
+    trailer:
+      deleteModalText: Ви дійсно хочете видалити причеп із номерним знаком «<span>{title}</span>»?
+    driver:
+      deleteModalText: Ви дійсно хочете видалити водія «<span>{title}</span>»?
+    transportInvoice:
+      deleteModalText: Ви дійсно хочете видалити товарно-транспортну накладну для видаткової накладної «<span>№{title}</span>»?
+  order:
+    deleteModalText: Ви дійсно хочете видалити замовлення «<span>№ {number}</span>»?
+    info:
+      deleteModalText: Ви дійсно хочете видалити товар із замовлення «<span>{title}</span>»?
+  products:
+    productModalImage: Фотографії товару
+    deleteModalText: Ви дійсно хочете видалити товар «<span>{title}</span>»?
+  payments:
+    deleteModalText: Ви дійсно хочете видалити оплату «<span>№ {number}</span>»?
+  prices:
+    deleteModalText: Ви дійсно хочете видалити прайс-лист «<span>{title}</span>»?
+    massDeleteModalText: ' | Ви дійсно хочете видалити <span>{count} прайс-лист</span>? | Ви дійсно хочете видалити <span>{count} прайс-листа</span>? | Ви дійсно хочете видалити <span>{count} прайс-листів</span>?'
+  accessories:
+    filling:
+      deleteModalText: Ви дійсно хочете видалити наповнювач «<span>{title}</span>»?
+    toggleMechanism:
+      deleteModalText: Ви дійсно хочете видалити механізм трансформації «<span>{title}</span>»?
+    frame:
+      deleteModalText: Ви дійсно хочете видалити каркас «<span>{title}</span>»?
+    textile:
+      massDeleteModalText: ' | Ви дійсно хочете видалити <span>{count} тканину</span>? | Ви дійсно хочете видалити <span>{count} тканини</span>? | Ви дійсно хочете видалити <span>{count} тканин</span>?'
+      deleteModalText: Ви дійсно хочете видалити тканину «<span>{title}</span>»?
+  print:
+    invoice:
+      name: Видаткова накладна № {number} від {date}
+      type: (Продаж покупцю)
+      seller: Постачальник
+      sellerInfo: ШАРМ, <br /> Не є платником податку на прибуток на загальних підставах
+      client: Покупець
+      order: Договір
+      orderName: Основний договір
+      product: Товар
+      number: Кількість
+      numberType: шт
+      price: Ціна
+      amount: Сума
+      amountWithoutPdf: Разом без ПДВ
+      withoutPdf: Без податку (ПДВ)
+      amountWithPdf: Разом з ПДВ
+      allProducts: Всього найменувань {number}, на суму {amount} грн
+      createPlace: Місце складання
+      delivery: Доставка
+
+component:
+  ourUppload:
+    selectOrDragImage: Оберіть або перетягніть зображення у це вікно. Ви можете прикріпити файли у форматі
+    selectFile: Оберіть файл
+  ourSelectMulti:
+    listIsEmpty: Список порожній.
+    noDataToShow: Дані відсутні.
+    clear: очистити
+    addMore: Додати ще...
+    add: Додати
+  ourSelect:
+    listIsEmpty: Список порожній.
+    noDataToShow: Дані відсутні.
+  ourTable:
+    noItems: Поки що в таблиці немає даних.
+    noResultsForFilters: За заданим фільтром нічого не знайдено.
+    yesterday: Вчора
+    today: Сьогодні
+    tomorrow: Завтра
+  ourDatePicker:
+    yesterday: Вчора
+    today: Сьогодні
+    tomorrow: Завтра
+  ourDateSeparator:
+    yesterday: Вчора
+    today: Сьогодні
+    tomorrow: Завтра
+  notify:
+    error:
+      default: При виконанні операції сталася помилка.
+      userNameFormatError: Невірний формат ФІО / Назви компанії.
+      userEmailFormatError: Невірний формат електронної пошти.
+      userPhoneFormatError: Невірний формат номеру телефона.
+      userRegionFormatError: Невірний формат області.
+      userTownFormatError: Невірний формат міста.
+      userUsedAccount: Даний акаунт зайнятий.
+      userPasswordFormatError: Невірний формат пароля.
+      userAccountNotFind: Даний акаунт не знайдено.
+      userPasswordError: Невірний пароль.
+      userEmailNotFound: Електронну пошту не знайдено.
+      userCurrentPasswordInvalid: Невірний поточний пароль.
+      userNewPasswordSimilar: Новий пароль ідентичний з поточним.
+      insufficientAccessRights: Недостатньо прав для доступу.
+      fillingsNameFormatError: Невірний формат наповнювача.
+      fillingsNameIsUsed: Назва наповнювача зайнята.
+      fillingNotFound: Наповнювач не знайдено.
+      toggleMechanismsNameFormatError: Невірний формат механізму трансформації.
+      toggleMechanismsNameIsUsed: Назва механізму трансформації зайнята.
+      toggleMechanismNotFound: Механізм трансформації не знайдено.
+      textilesNotFound: Тканину не знайдено.
+      textileNameFormatError: Невірний формат назви тканини.
+      textileCategoryFormatError: Невірний формат категорії тканини.
+      textilesNameIsUsed: Назва тканини зайнята.
+      productsNotFound: Товар не знайдено.
+      productNameFormatError: Невірний формат назви товару.
+      productNotFilledAllData: Заповніть всі дані товару.
+      productsNameIsUsed: Назва товару зайнята.
+      pricesNotFound: Прайс-лист не знайдено.
+      pricesNameFormatError: Невірний формат назви прайс-листа.
+      pricesDateFormatError: Невірний формат дати прайс-листа.
+      pricesNameIsUsed: Назва прайс-листа зайнята.
+      pricesCurrencyFormatError: Невірний формат валюти прайс-листа.
+      ordersCantBeEmpty: Замовлення не може бути пустим.
+      orderDataEmptyError: Невірний формат даних замовлення.
+      orderNotFound: Замовлення не знайдено.
+      orderWithThisStatusCanNotBeDeleted: Замовлення з цим статусом не може бути видаленим.
+      orderProductDataFormatError: Невірний формат даних товара замовлення.
+      orderCanNotBeChanged: Замовлення не може бути зміненим.
+      orderProductNotFound: Товар із замовлення не знайдено.
+      orderProductCantBeNegative: Значення створеної кількості товару не може бути негативним.
+      paymentsDataFormatError: Невірний формат даних оплати.
+      clientNotFound: Клієнт не знайдений.
+      paymentNotFound: Оплата не знайдена.
+      cannotFindPrice: Не можливо знайти прайс-лист клієнта.
+      carNotFound: Автомобіль не знайдено.
+      carFormIsEmptyError: Форма створення автомобіля не може бути постой.
+      trailerNotFound: Причеп не знайдено.
+      trailerFormIsEmptyError: Форма створення причепа не може бути постой.
+      driverNotFound: Водія не знайдено.
+      driverFormIsEmptyError: Форма створення водія не може бути постой.
+    warning:
+      default: Попередження.
+    success:
+      default: Операція успішно виконана.
+      userSuccessRegistered: Акаунт успішно зареєстровано.
+      userSuccessResetPassword: Новий пароль надісланий на Вашу електронну пошту.
+      userProfileSuccessUpdate: Профіль успішно оновлено.
+      userPasswordSuccessChange: Пароль успішно змінено.
+      fillingSuccessCreated: Наповнювач успішно створено.
+      fillingSuccessUpdate: Наповнювач успішно оновлено.
+      fillingSuccessDeleted: Наповнювач успішно видалено.
+      toggleMechanismsSuccessCreated: Механізм трансформації успішно створено.
+      toggleMechanismSuccessUpdate: Механізм трансформації успішно оновлено.
+      toggleMechanismSuccessDeleted: Механізм трансформації успішно видалено.
+      textileSuccessCreated: Тканина успішно створена.
+      textileSuccessUpdate: Тканина успішно оновлена.
+      massTextileSuccessDeleted: Тканини успішно видалені.
+      textileSuccessDeleted: Тканина успішно видалена.
+      productSuccessCreated: Товар успішно створено.
+      productSuccessUpdate: Товар успішно оновлено.
+      productSuccessDeleted: Товар успішно видалено.
+      priceSuccessCreated: Прайс-лист успішно створено.
+      priceSuccessUpdate: Прайс-лист успішно оновлено.
+      massPriceSuccessDeleted: Прайс-листи успішно видалено.
+      priceSuccessDeleted: Прайс-лист успішно видалено.
+      orderSuccessCreated: Замовлення успішно створено.
+      orderSuccessUpdate: Замовлення успішно оновлено.
+      orderSuccessDeleted: Замовлення успішно видалено.
+      orderProductSuccessCreated: Товар успішно доданий до замовлення.
+      orderProductSuccessDeleted: Товар успішно видалений із замовлення.
+      paymentSuccessCreated: Оплата успішно створена.
+      paymentSuccessUpdate: Оплата успішно оновлена.
+      paymentSuccessDeleted: Оплата успішно видалена.
+      userSuccessUpdate: Користувач успішно оновлений.
+      carSuccessCreated: Автомобіль успішно створено.
+      carSuccessUpdate: Автомобіль успішно оновлено.
+      carSuccessDeleted: Автомобіль успішно видалено.
+      trailerSuccessCreated: Причеп успішно створено.
+      trailerSuccessUpdate: Причеп успішно оновлено.
+      trailerSuccessDeleted: Причеп успішно видалено.
+      driverSuccessCreated: Водія успішно створено.
+      driverSuccessUpdate: Водія успішно оновлено.
+      driverSuccessDeleted: Водія успішно видалено.
+
+title:
+  order: Замовлення
+  transport: Транспорт
+  car: Авто
+  trailer: Причеп
+  driver: Водій
+  carAdd: Створення авто
+  carEdit: Редагування авто
+  carDelete: Видалення авто
+  trailerAdd: Створення причепа
+  trailerEdit: Редагування причепа
+  trailerDelete: Видалення причепа
+  driverAdd: Створення водія
+  driverEdit: Редагування водія
+  driverDelete: Видалення водія
+  transportInvoiceShort: ТТН
+  transportInvoice: Товарно-транспортна накладна
+  transportInvoiceList: Товарно-транспортні накладні
+  transportInvoiceAdd: Створення ТТН
+  transportInvoiceEdit: Редагування ТТН
+  transportInvoiceDelete: Видалення ТТН
+  deliveryPrice: Сума доставки
+  print: Друкування
+  retailPrice: Роздрібний прайс-лист
+  filter: Фільтр
+  pageNotFound: Сторінка не знайдена
+  backToHome: Повернутись на головну сторінку
+  orderDelete: Видалення замовлення
+  textiles: Тканини
+  orderAmount: Сума замовлення
+  createOrder: Створення замовлення
+  ordersEdit: Редагування замовлення
+  ordersAddProduct: Додавання товару до замовлення
+  ordersProductDelete: Видалення товару із замовлення
+  fillingDelete: Видалення наповнювача
+  fillingAdd: Створення наповнювача
+  fillingEdit: Редагування наповнювача
+  textile: Тканина
+  textileAdd: Створення тканини
+  textileEdit: Редагування тканини
+  textileDelete: Видалення тканини
+  toggleMechanism: Механізм трансформації
+  toggleMechanismAdd: Створення механізму трансформації
+  toggleMechanismEdit: Редагування механізму трансформації
+  toggleMechanismDelete: Видалення механізму трансформації
+  frame: Каркас
+  frameAdd: Створення каркаса
+  frameEdit: Редагування каркаса
+  frameDelete: Видалення каркаса
+  filling: Наповнювач
+  accessories: Комплектуючі
+  changePassword: Зміна пароля
+  profile: Профіль
+  login: Вхід
+  backToAuth: Повернутися на форму входу
+  canNotAuth: Не можете увійти?
+  sendNewPassInEmail: Пароль буде надіслано Вам на пошту.
+  haveAccount: Вже є акаунт? Увійти
+  forgotPassword: Відновлення паролю
+  payments: Оплати
+  paymentsAdd: Створення оплати
+  paymentsEdit: Редагування оплати
+  paymentsDelete: Видалення оплати
+  pricesAdd: Створення прайс-листа
+  pricesEdit: Редагування прайс-листа
+  priceDelete: Видалення прайс-листа
+  clientsOrders: Замовлення клієнта
+  ordersInfo: Інформація про замовлення
+  signIn: Вхід
+  signUp: Реєстрація
+  brandName: ШАРМ
+  generalInfo: Загальна інформація
+  products: Товар
+  productsAdd: Створення товару
+  productsEdit: Редагування товару
+  productsDelete: Видалення товару
+  allOrders: Всі замовлення
+  ordersAdd: Створення замовлення
+  clients: Клієнти
+  prices: Прайс-листи
+  users: Користувачі
+  myOrders: Мої замовлення
+  myPayments: Мої оплати
+  setDeliveryDate: Встановити дату розвантаження
+  language:
+    ua: Укр
+    en: Eng
+  error:
+    forbidden: Доступ заборонений
+    notFound: Сторінка не знайдена
+    404: Сторінка не знайдена
+
+label:
+  customer: Замовник
+  car: Автомобіль
+  trailer: Причеп
+  driver: Водій
+  unloadingPlace: Місце розвантаження
+  fullName: ПІБ
+  driverLicenseNumber: Номер посвідчення водія
+  brand: Марка
+  model: Модель
+  licensePlate: Номера автомобіля
+  vinCode: 123WD123ADR
+  year: Рік
+  weight: Вага
+  owner: Власник авто (ТОВ/ПІБ)
+  taxNumber: Податковий номер
+  deliveryAmount: Сума доставки
+  retailPrice: Роздрібний
+  priceFrom: Ціна від
+  priceTo: Ціна до
+  showProductByType: Показати товар за типом
+  sofa: Диван
+  cornerSofa: Кутовий диван
+  bed: Ліжко
+  modularSystem: Модульна система
+  productType: Тип товара
+  dateFrom: З дати
+  dateTo: По дату
+  width: Ширина
+  length: Довжина
+  height: Висота
+  widthInSM: Ширина в СМ
+  lengthInSM: Довжина в СМ
+  heightInSM: Висота в СМ
+  language: Мова
+  admin: Адмін
+  orderNumber: №
+  yard: Вулиця
+  current: поточний
+  orderClient: Замовник
+  setDeliveryDate: Встановити дату розвантаження
+  orderStatus: Статус замовлення
+  orderCodes:
+    cancel: Відмовлено
+    expected: Очікується
+    inProgress: В процесі
+    finished: Виготовлено
+  module: Модуль {title}
+  mainPart: Основа
+  textilePlace: Місце тканини
+  currency: Валюта
+  role: Роль
+  noPrice: Ціна відсутня
+  raiseOrLowerPrice: "Підвищити / знизити ціну в %"
+  product: Товар
+  prices: Ціни
+  specialPrice: Спец ціна
+  categoryNumber: "{title} категорія"
+  photoWithout: Фотографія відсутня
+  sleepingPlace: Розмір спального місця
+  generalSize: Загальний розмір
+  productFilling: Наповнення
+  productImage: Фотографії товару
+  textileImage: Фотографія тканини
+  image: Фотографія
+  category: Категорія
+  currentPassword: Поточний пароль
+  newPassword: Новий пароль
+  region: Область
+  deliveryPlace: Адреса доставки
+  ban: Заблокований
+  download: Завантажити
+  from: Від
+  companyName: ФІО / Назва компанії
+  email: Пошта
+  clientName: Ім'я
+  phone: Телефон
+  price: Прайс-лист
+  debt: Борг
+  name: Назва
+  textile: Тканина
+  number: Кількість
+  made: Зроблено
+  note: Примітка
+  size: Розмір
+  town: Місто
+  date: Дата
+  status: Статус
+  details: Деталі
+  deliveryDate: Дата розвантаження
+  client: Клієнт
+  amount: Сума
+  amountWithCurrency: Сума {currencySymbol}
+  productName: Назва товару
+  filling: Наповнювач
+  toggleMechanism: Механізм трансформації
+  frame: Каркас
+  password: Пароль
+  clickForOpenInNewPage: Клікніть для відкриття на новій сторінці
+
+description:
+  car: Інформація про авто, яке буде виконувати вантажоперевезення
+  trailer: Інформація про причем, який буде виконувати вантажоперевезення
+  driver: Інформація про водія, який буде виконувати вантажоперевезення
+  filling: Тип наповнювача товару.
+  toggleMechanism: Тип механізму трансформації товару.
+  frame: Тип каркаса товару.
+  textile: Тканина та її категорія.
+  raiseOrLowerPrice: Для підвищення ціни необхідно ввести позитивне значення (наприклад 10). Для зниження ціни необхідно ввести негативне значення (наприклад -10).
+
+placeholder:
+  car: DAF LDV ВХ0000СВ
+  trailer: KOEGEL SN 00 ВХ0
+  driver: Василенко Василь Васильович
+  unloadingPlace: Область, місто, вулиця
+  fullName: Огороднік Микола Анатолійович
+  driverLicenseNumber: АП1204120
+  brand: 'DAF'
+  model: 'LDV'
+  licensePlate: ВХ0000СВ
+  vinCode: VIN Code автомобіля
+  year: '2013'
+  weight: '22'
+  length: '1000'
+  width: '2000'
+  height: '2500'
+  owner: Василенко Василь Васильович
+  taxNumber: '0000000000'
+  selectProduct: Виберіть товар
+  selectTextile: Виберіть тканину
+  productType: Кутовий диван
+  addMore: Додати ще...
+  language: Українська
+  client: Василь
+  note: Зробити без подушок
+  textileName: Альберта
+  toggleMechanismName: Єврокнижка
+  fillingName: ППУ
+  frameName: Дерево
+  currentPassword: Введіть Ваш поточний пароль
+  newPassword: Введіть Ваш новий пароль
+  region: Хмельницька
+  deliveryPlace: Вул. Героїв 1
+  town: Шепетівка
+  priceName: Загальний
+  productName: Товар
+  phone: 000-000-0000
+  password: '********'
+  filling: ППУ
+  toggleMechanism: Єврокнижка
+  frame: Дерево
+  companyName: Ромашка
+  email: email@gmail.com
+  category: Категорія
+
+validation:
+  required: Заповніть дане поле.
+  requiredFile: Необхідно вибрати файл.
+  mustBeEmail: Невірний формат електронної пошти.
+  passwordMinLength: Пароль повинен бути не менше {length} символів.
+  phoneLength: Телефон повинен містити від 11 до 13 цифр.
+  minValue: Мінімальне значення має бути не менше {number}
+
+button:
+  createTransportInvoice: Створити ТТН
+  editTransportInvoice: Редагувати ТТН
+  printTransportInvoice: Роздрукувати ТТН
+  createInvoice: Створити накладну
+  find: Знайти
+  reset: Скинути
+  createPayment: Створити оплату
+  paymentHistory: Історія оплат
+  addToOrder: Додати до замовлення
+  downloadInvoice: Завантажити накладну
+  issue: Оформити
+  viewTextile: Переглянути тканини
+  cancelCopy: Відмінити копіювання
+  copy: Скопіювати
+  more: Ще
+  cancel: Відміна
+  delete: Видалити
+  add: Створити
+  save: Зберегти
+  createPrice: Створити прайс-лист
+  create: Створити
+  addMore: Додати ще
+  createFilling: Створити наповнювач
+  createToggleMechanism: Створити механізм трансформації
+  createFrame: Створити каркас
+  close: Закрити
+  filter: Фільтр
+  createOrder: Створити замовлення
+  createProduct: Створити товар
+  selectFile: Select file
+  login: Увійти
+  changePassword: Змінити пароль
+  resetPassword: Отримати новий пароль
+  signUp: Зареєструватись
+  back: Назад
+  printInvoice: Роздрукувати накладну

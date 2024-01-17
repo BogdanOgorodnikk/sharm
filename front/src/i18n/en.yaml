@@ -1,0 +1,395 @@
+page:
+  order:
+    deleteModalText: Do you really want to delete this order «<span>№ {number}</span>»?
+    info:
+      deleteModalText: Do you really want to delete this product from order «<span>{title}</span>»?
+  products:
+    productModalImage: Images of rhe product
+    deleteModalText: Do you really want to delete this product «<span>{title}</span>»?
+  payments:
+    deleteModalText: Do you really want to delete this payment «<span>№ {number}</span>»?
+  prices:
+    deleteModalText: Do you really want to delete this price list «<span>{title}</span>»?
+    massDeleteModalText: ' | Do you really want to delete <span>{count} price list</span>? | Do you really want to delete <span>{count} price lists</span>?'
+  accessories:
+    filling:
+      deleteModalText: Do you really want to delete filling «<span>{title}</span>»?
+    toggleMechanism:
+      deleteModalText: Do you really want to delete toggle mechanism «<span>{title}</span>»?
+    frame:
+      deleteModalText: Do you really want to delete this frame «<span>{title}</span>»?
+    textile:
+      massDeleteModalText: ' | Do you really want to delete <span>{count} the textile</span>? | Do you really want to delete <span>{count} textiles</span>?'
+      deleteModalText: Do you really want to delete this textile «<span>{title}</span>»?
+  print:
+    invoice:
+      name: Expense invoice № {number} of {date}
+      type: (Sell to buyer)
+      seller: Provider
+      sellerInfo: SHARM, <br /> Not a general income tax payer
+      client: Buyer
+      order: Contract
+      orderName:  Basic contract
+      product: Goods
+      number: Number
+      numberType: piece
+      price: Price
+      amount: Amount
+      amountWithoutPdf: Together without VAT
+      withoutPdf: Without tax (VAT)
+      amountWithPdf: Including VAT
+      allProducts: Total items {number}, for the amount {amount} hryvnias
+      createPlace: Place of assembly
+      delivery: Delivery
+
+component:
+  ourUppload:
+    selectOrDragImage: Select or drag image in this window . You can add files у форматі
+    selectFile: Select a file
+  ourSelectMulti:
+    listIsEmpty: List is empty.
+    noDataToShow: No data available.
+    clear: Clear
+    addMore: Add more...
+    add: Add.
+  ourSelect:
+    listIsEmpty: List is empty.
+    noDataToShow: No data available.
+  ourTable:
+    noItems: There is no data in the table yet.
+    noResultsForFilters: Nothing was found for the specified filters.
+    yesterday: Yesterday
+    today: Today
+    tomorrow: Tomorrow
+  ourDatePicker:
+    yesterday: Yesterday
+    today: Today
+    tomorrow: Tomorrow
+  ourDateSeparator:
+    yesterday: Yesterday
+    today: Today
+    tomorrow: Tomorrow
+  notify:
+    error:
+      default: An error occurred while performing the operation.
+      userNameFormatError: Incorrect full name / Name of company.
+      userEmailFormatError: Incorrect email format.
+      userPhoneFormatError: Incorrect number phone format.
+      userRegionFormatError: Incorrect format of region.
+      userTownFormatError: Incorrect format of town.
+      userUsedAccount: This account is taken.
+      userPasswordFormatError: Incorrect format of password.
+      userAccountNotFind: This account is not found.
+      userPasswordError: Incorrect password.
+      userEmailNotFound: This email is not found.
+      userCurrentPasswordInvalid: Incorrect current password.
+      userNewPasswordSimilar: New password is similar with current.
+      insufficientAccessRights: Insufficient access rights.
+      fillingsNameFormatError: Incorrect format of filling.
+      fillingsNameIsUsed: Name of filling is taken.
+      fillingNotFound: Filling is not found.
+      toggleMechanismsNameFormatError: Incorrect toggle of mechanism format.
+      toggleMechanismsNameIsUsed: Name of toggle mechanism is taken.
+      toggleMechanismNotFound: Toggle of mechanism is not found.
+      textilesNotFound: Textile is not found.
+      textileNameFormatError: Incorrect name of textile format.
+      textileCategoryFormatError: Incorrect category of textile format.
+      textilesNameIsUsed: Name of textile is taken.
+      productsNotFound: Product is not found.
+      productNameFormatError: Incorrect name of product format.
+      productNotFilledAllData: Not filled all product data.
+      productsNameIsUsed: Name of product is taken.
+      pricesNotFound: Price list is not found.
+      pricesNameFormatError: Incorrect name of price list format.
+      pricesDateFormatError: Incorrect date of price list format.
+      pricesNameIsUsed: Name of price list is taken.
+      pricesCurrencyFormatError: Incorrect currency of price list format.
+      ordersCantBeEmpty: Order can not be empty.
+      orderDataEmptyError: Incorrect data of order format.
+      orderNotFound: Order is not found.
+      orderWithThisStatusCanNotBeDeleted: Order with this status can not be deleted.
+      orderProductDataFormatError: Incorrect product data format.
+      orderCanNotBeChanged: Order can not be changed.
+      orderProductNotFound: Order product not found.
+      orderProductCantBeNegative: Order product can not be negative.
+      paymentsDataFormatError: Incorrect format of data payment.
+      clientNotFound: Client is not found.
+      paymentNotFound: Payment is not found.
+      cannotFindPrice: Can not find client price.
+    warning:
+      default: Warning.
+    success:
+      default: The operation was successfully performed.
+      userSuccessRegistered: Account registered successfully.
+      userSuccessResetPassword: New password has been sent to your email.
+      userProfileSuccessUpdate: Profile updated successfully.
+      userPasswordSuccessChange: Password changed successfully.
+      fillingSuccessCreated: The filling has been created successfully.
+      fillingSuccessUpdate: The filling has been updated successfully.
+      fillingSuccessDeleted: The filling has been removed successfully.
+      toggleMechanismsSuccessCreated: Toggle mechanism created successfully.
+      toggleMechanismSuccessUpdate: Toggle mechanism updated successfully.
+      toggleMechanismSuccessDeleted: Toggle mechanism deleted successfully.
+      textileSuccessCreated: The textile is successfully created.
+      textileSuccessUpdate: The textile has been updated successfully.
+      massTextileSuccessDeleted: The textile have been successfully removed.
+      textileSuccessDeleted: The textile has been removed successfully.
+      productSuccessCreated: The product has been successfully created.
+      productSuccessUpdate: The product has been updated successfully.
+      productSuccessDeleted: The product has been successfully removed.
+      priceSuccessCreated: Price list has  been successfully created.
+      priceSuccessUpdate: Price list has been successfully updated.
+      massPriceSuccessDeleted: Price list has been deleted successfully.
+      priceSuccessDeleted: Price list is deleted successfully.
+      orderSuccessCreated: Order is created successfully.
+      orderSuccessUpdate: Order is successfully updated.
+      orderSuccessDeleted: Order is deleted successfully.
+      orderProductSuccessCreated: Product successfully added to order.
+      orderProductSuccessDeleted: Product successfully deleted from order.
+      paymentSuccessCreated: Payment created successfully.
+      paymentSuccessUpdate: Payment updated successfully.
+      paymentSuccessDeleted: Payment is deleted successfully.
+      userSuccessUpdate: User is updated successfully.
+
+title:
+  transport: Transport
+  car: Car
+  trailer: Trailer
+  driver: Driver
+  carAdd: Create car
+  carEdit: Edit car
+  carDelete: Delete car
+  print: Print
+  retailPrice: Retail price
+  filter: Filter
+  pageNotFound: Page is not found
+  backToHome: Back to main page
+  orderDelete: Deleting of order
+  textiles: Textiles
+  orderAmount: Order amount
+  createOrder: Create an order
+  ordersEdit: Editing an order
+  ordersAddProduct: Adding a product to an order
+  ordersProductDelete: Removing the product from the order
+  fillingDelete: Removal of filling
+  fillingAdd: Creating a filling
+  fillingEdit: Editing filler
+  textile: textile
+  textileAdd: textile creation
+  textileEdit: textile edit
+  textileDelete: Removal of textile
+  toggleMechanism: Mechanism of toggle
+  toggleMechanismAdd: Creating mechanism of toggle
+  toggleMechanismEdit: Editing of the toggle mechanism
+  toggleMechanismDelete: Removal of the toggle mechanism
+  frame: Frame
+  frameAdd: Creating a frame
+  frameEdit: Frame editing
+  frameDelete: Removing the frame
+  filling: Filling
+  accessories: Accessories
+  changePassword: Password change
+  profile: profile
+  login: Login
+  backToAuth: Back to authorization
+  canNotAuth: Can not log in??
+  sendNewPassInEmail: We are sending you a new password by email.
+  haveAccount: Already have an account? Sign in
+  forgotPassword: Forgot password?
+  payments: payments
+  paymentsAdd: Create a payment
+  paymentsEdit: Edit payment
+  paymentsDelete: Delete payment
+  pricesAdd: Creation of a price list
+  pricesEdit: Price list editing
+  priceDelete: Price list removal
+  clientsOrders: Customer order
+  ordersInfo: Information about order
+  signIn: Sign in
+  signUp: Sign up
+  brandName: Sharm Factory
+  generalInfo: General Information
+  products: Product
+  productsAdd: Create a product
+  productsEdit: Editing product
+  productsDelete: Removal of product
+  allOrders: All orders
+  ordersAdd: Create order
+  clients: Clients
+  prices: Price lists
+  users: Users
+  myOrders: My orders
+  myPayments: My payments
+  setDeliveryDate: Set the date of shipment
+  language:
+    ua: Укр
+    en: Eng
+  error:
+    forbidden: Access is denied
+    notFound: Page is not found
+    404: Page is not
+
+label:
+  deliveryAmount: Delivery amount
+  retailPrice: Retail
+  priceFrom: Price from
+  priceTo: Price to
+  showProductByType: Show product by type
+  sofa: Sofa
+  cornerSofa: Corner sofa
+  bed: Bed
+  modularSystem: Modular system
+  productType: Product type
+  dateFrom: Date from
+  dateTo: Date to
+  width: Width
+  length: Length
+  height: Height
+  widthInSM: Width in СМ
+  lengthInSM: Length in СМ
+  heightInSM: Height in CM
+  language: Language
+  admin: Admin
+  orderNumber: №
+  yard: Yard
+  current: Current
+  orderClient: customer
+  setDeliveryDate: Set the date of shipment
+  orderStatus: Status of ordering
+  orderCodes:
+    cancel: Canceled
+    expected: Expected
+    inProgress: In progress
+    finished: Done
+  module: Module {title}
+  mainPart: Main part
+  textilePlace: Place of textile
+  currency: Currency
+  role: Role
+  noPrice: Ціна відсутня
+  raiseOrLowerPrice: "Raise / lower price in %"
+  product: Product
+  prices: Prices
+  specialPrice: Special price
+  categoryNumber: "{title} category"
+  photoWithout: No image
+  sleepingPlace: Size of sleeping place
+  generalSize: General size
+  productFilling: Filling
+  productImage: Product images
+  textileImage: Textile image
+  image: Image
+  category: Category
+  currentPassword: Current password
+  newPassword: New password
+  region: Region
+  deliveryPlace: Place of delivery
+  ban: Banned
+  download: Download
+  from: From
+  companyName: Full name / Company name
+  email: Email
+  clientName: Name
+  phone: Number phone
+  price: Price-list
+  debt: Debt
+  name: Name
+  textile: Textile
+  number: Number
+  made: Made
+  note: Note
+  size: Size
+  town: Town
+  date: Date
+  status: Status
+  details: Details
+  deliveryDate: Date of delivery
+  client: Client
+  amount: Amount
+  amountWithCurrency: Amount {currencySymbol}
+  productName: Name of product
+  filling: Filling
+  toggleMechanism: Toggle mechanism
+  frame: Frame
+  password: Password
+  clickForOpenInNewPage: Click for open in a new page
+
+description:
+  car: Information about the car that will carry out cargo transportation
+  trailer: Information about what and who will perform the freight transportation
+  driver: Information about the driver who will carry out the cargo transportation
+  filling: Filling type.
+  toggleMechanism: Toggle mechanism type.
+  frame: Type of frame product.
+  textile: Textiles and their categories.
+  raiseOrLowerPrice: To increase the price, you must enter a positive value (eg 10). To decrease the price, enter a negative value (for example -10).
+
+placeholder:
+  selectProduct: Select product
+  selectTextile: Select textile
+  productType: Corner sofa
+  addMore: Add more.
+  language: English
+  client: John
+  note: Зробити без подушок
+  textileName: Alberta
+  toggleMechanismName: Eurobook
+  fillingName: PPU
+  frameName: Wood
+  currentPassword: Enter your current password
+  newPassword: Enter your new password
+  region: Khmelnytska
+  deliveryPlace: St. Heroes 1
+  town: Shepetivka
+  priceName: General
+  productName: Sofa "Junior"
+  phone: 000-000-0000
+  password: '********'
+  filling: PPU
+  toggleMechanism: Eurobook
+  frame: PPU
+  companyName: Romashka
+  email: email@gmail.com
+
+validation:
+  required: Fill in this field.
+  requiredFile: Select file please.
+  mustBeEmail: Incorrect format of email.
+  passwordMinLength: Password should contain no less than {length} symbols.
+  phoneLength: Phone number should contain between 11 and 13 digits.
+  minValue: Minima value must be {number}.
+
+button:
+  createInvoice: Create invoice
+  find: Find
+  reset: Reset
+  createPayment: Create
+  paymentHistory: History of payment
+  addToOrder: Add to order
+  downloadInvoice: Download an invoice
+  issue: Issue
+  viewTextile: View textile
+  cancelCopy: Cancel copy
+  copy: Copy
+  more: More
+  cancel: Cansel
+  delete: Delete
+  add: Add
+  save: Save
+  createPrice: Create a price list
+  create: Create
+  addMore: Add more
+  createFilling: Create filling
+  createToggleMechanism: Create toggle of mechanism
+  createFrame: Create framework
+  close: Close
+  filter: Filter
+  createOrder: Create an order
+  createProduct: Create a product
+  selectFile: Select file
+  login: Login
+  changePassword: Change the password
+  resetPassword: Get a new password
+  signUp: Sign up
+  back: Back
+  printInvoice: Print invoice
